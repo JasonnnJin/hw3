@@ -7,7 +7,7 @@ d3.csv("iris.csv").then(function(data) {
     });
 
     // Define the dimensions and margins for the SVG
-    const margin = {top: 20, right: 30, bottom: 40, left: 40},
+    const margin = {top: 20, right: 100, bottom: 40, left: 40},
         width = 500 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
@@ -73,18 +73,19 @@ d3.csv("iris.csv").then(function(data) {
         .attr("transform", (d, i) => "translate(0," + i * 20 + ")");
 
     legend.append("circle")
-        .attr("cx", width - 10)
+        .attr("cx", width + 40)  // Move to the right side to avoid blocking
         .attr("cy", 9)
         .attr("r", 5)
         .style("fill", colorScale);
 
     legend.append("text")
-        .attr("x", width - 24)
+        .attr("x", width + 34)
         .attr("y", 9)
         .attr("dy", ".35em")
-        .style("text-anchor", "end")
+        .style("text-anchor", "start")
         .text(d => d);
 });
+
 
 
 d3.csv("iris.csv").then(function(data) {
