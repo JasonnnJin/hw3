@@ -73,7 +73,7 @@ d3.csv("iris.csv").then(function(data) {
         .attr("transform", (d, i) => "translate(0," + i * 20 + ")");
 
     legend.append("circle")
-        .attr("cx", width + 40)  // Move to the right side to avoid blocking
+        .attr("cx", width + 100)  // Move to the right side to avoid blocking
         .attr("cy", 9)
         .attr("r", 5)
         .style("fill", colorScale);
