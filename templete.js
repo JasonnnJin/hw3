@@ -7,7 +7,7 @@ d3.csv("iris.csv").then(function(data) {
     });
 
     // Define the dimensions and margins for the SVG
-    const margin = {top: 20, right: 100, bottom: 40, left: 40},
+    const margin = {top: 20, right: 1000, bottom: 40, left: 40},
         width = 500 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
