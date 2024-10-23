@@ -53,14 +53,14 @@ d3.csv("iris.csv").then(function(data) {
     // Add x-axis label
     svg.append("text")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom)
+        .attr("y", height + 35)
         .attr("text-anchor", "middle")
         .text("Petal Length");
 
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 14)
+        .attr("y", -margin.left + 60)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Width");
@@ -95,7 +95,7 @@ d3.csv("iris.csv").then(function(data) {
     });
 
     // Define the dimensions and margins for the SVG
-    const margin = {top: 20, right: 30, bottom: 40, left: 40},
+    const margin = {top: 20, right: 200, bottom: 40, left: 100},
         width = 500 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
@@ -128,14 +128,14 @@ d3.csv("iris.csv").then(function(data) {
     // Add x-axis label
     svg.append("text")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom)
+        .attr("y", height + margin.bottom - 5)
         .attr("text-anchor", "middle")
         .text("Species");
 
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 14)
+        .attr("y", -margin.left + 35)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Length");
