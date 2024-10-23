@@ -60,7 +60,7 @@ d3.csv("iris.csv").then(function(data) {
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 13)
+        .attr("y", -margin.left + 14)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Width");
@@ -73,7 +73,7 @@ d3.csv("iris.csv").then(function(data) {
         .attr("transform", (d, i) => "translate(0," + i * 20 + ")");
 
     legend.append("circle")
-        .attr("cx", width + 100)  // Move to the right side to avoid blocking
+        .attr("cx", width + 135)  
         .attr("cy", 9)
         .attr("r", 5)
         .style("fill", colorScale);
@@ -135,7 +135,7 @@ d3.csv("iris.csv").then(function(data) {
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 13)
+        .attr("y", -margin.left + 14)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Length");
