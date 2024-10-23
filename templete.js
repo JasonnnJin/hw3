@@ -60,7 +60,7 @@ d3.csv("iris.csv").then(function(data) {
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 10)
+        .attr("y", -margin.left + 13)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Width");
@@ -135,7 +135,7 @@ d3.csv("iris.csv").then(function(data) {
     // Add y-axis label
     svg.append("text")
         .attr("x", -height / 2)
-        .attr("y", -margin.left + 10)
+        .attr("y", -margin.left + 13)
         .attr("text-anchor", "middle")
         .attr("transform", "rotate(-90)")
         .text("Petal Length");
