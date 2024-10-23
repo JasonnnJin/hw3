@@ -79,7 +79,7 @@ d3.csv("iris.csv").then(function(data) {
         .style("fill", colorScale);
 
     legend.append("text")
-        .attr("x", width + 34)
+        .attr("x", width + 30)
         .attr("y", 9)
         .attr("dy", ".35em")
         .style("text-anchor", "start")
