@@ -73,7 +73,7 @@ d3.csv("iris.csv").then(function(data) {
         .attr("transform", (d, i) => "translate(0," + i * 20 + ")");
 
     legend.append("circle")
-        .attr("cx", width + 135)  
+        .attr("cx", width + 140)  
         .attr("cy", 9)
         .attr("r", 5)
         .style("fill", colorScale);
